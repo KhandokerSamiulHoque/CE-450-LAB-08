@@ -24,7 +24,7 @@ def rotaryDeal():
         if last_dt_status != current_dt_status:
             globalCounter += 1
             print('globalCounter = %d' % globalCounter)
-            if globalCounter == 20:
+            if globalCounter == 20: # it takes 20 global counter to complete one circle.
                 trigger_buzzer()
                 globalCounter = 0
         last_dt_status = current_dt_status
